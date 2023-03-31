@@ -25,13 +25,15 @@
         header{
             border-bottom: 3px solid rgba(200,128,128,0.5);
         }
-        header img{
-            width: 50%;
-        }
+
         .container{
             background: RGB(34,33,39);
             color: rgb(30, 81, 210);
             padding: 0 15px;
+        }
+         header img{
+            width:100%;
+            
         }
         /*Main menu*/
         .mainMenu a {
@@ -69,12 +71,30 @@
                 margin: 0 5%;
 
             }
+            /*main menu tablet*/
+            header > .container {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+            }
+            header nav {
+                align-self:stretch ;
+            }
+            .mainMenu {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+            }
+            .mainMenu > li {
+
+            }
             /*2 és 4 oszlop elrendeződés*/
             .box-2, 
             .box-3,
             .box-4 {
                 display: flex;
                 flex-flow: row wrap;
+
             }
             .box-2 > div,
             .box-3 > div,

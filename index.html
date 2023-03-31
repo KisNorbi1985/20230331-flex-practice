@@ -18,46 +18,77 @@
         html, body {
             scroll-behavior: smooth;
         }
+        h2 {
+            text-align: center;
+            padding: 15px 0;
+        }
+        header{
+            border-bottom: 3px solid rgba(200,128,128,0.5);
+        }
+        .container{
+            background: khaki;
+        }
+        /*Képváltó terület*/
         section.slider {
             height: 100%;
             height: 350px;
             background: yellow;
         }
+        /*Desktop*/
+        @media screen and (min-width:1200px) {
+            .container{
+                background: pink;
+                max-width: 1200px;
+                margin: 0 auto;
+                
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <span class="logo"><a href="?"><img src="images/logo.jpg" alt="logo"></a></span>
-        <!-- nav>ul>li*5>a[href="#menupont-$"]{menupont $} -->
-        <nav>
-            <ul class="mainMenu">
-                <li><a href="#menupont-1">menupont 1</a></li>
-                <li><a href="#menupont-2">menupont 2</a></li>
-                <li><a href="#menupont-3">menupont 3</a></li>
-                <li><a href="#menupont-4">menupont 4</a></li>
-                <li><a href="#menupont-5">menupont 5</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <span class="logo"><a href="?"><img src="images/mylogo.jpg" alt="logo"></a></span>
+            <!-- nav>ul>li*5>a[href="#menupont-$"]{menupont $} -->
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="#menupont-1">menupont 1</a></li>
+                    <li><a href="#menupont-2">menupont 2</a></li>
+                    <li><a href="#menupont-3">menupont 3</a></li>
+                    <li><a href="#menupont-4">menupont 4</a></li>
+                    <li><a href="#menupont-5">menupont 5</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="slider">képváltó fix 350px magas</section>
+    <section class="slider">
+        <h1>Képváltó</h1> 
+        <p> fix 350px magas</p>
+    </section>
     <main>
-        <section class="box-2">
+        <section>
             <h2>Két oszlopos</h2>
-            <div>oszlop 1</div>
-            <div>oszlop 2</div>
+            <div class="box-2">
+                <div>oszlop 1</div>
+                <div>oszlop 2</div>
+            </div>
         </section>
-        <section class="box-3">
+        <section>
             <h2>Három oszlopos</h2>
-            <div>oszlop 1</div>
-            <div>oszlop 2</div>
-            <div>oszlop 3</div>
+            <div class="box-3">
+                <div>oszlop 1</div>
+                <div>oszlop 2</div> 
+                <div>oszlop 3</div>
+            </div>
         </section>
-        <section class="box-4">
+        <section>
             <h2>Négy oszlopos</h2>
-            <div>oszlop 1</div>
-            <div>oszlop 2</div>
-            <div>oszlop 3</div>
-            <div>oszlop 4</div>
+            <div class="box-4">
+                <div>oszlop 1</div>
+                <div>oszlop 2</div>
+                <div>oszlop 3</div>
+                <div>oszlop 4</div>
+            </div>
         </section>
     </main>
     <footer>

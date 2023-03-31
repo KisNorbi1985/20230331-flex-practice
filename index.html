@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex gyakorlása</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+    </style>
 </head>
 <body>
     <header>
         <span class="logo"><a href="?"><img src="images/logo.jpg" alt="logo"></a></span>
         <!-- nav>ul>li*5>a[href="#menupont-$"]{menupont $} -->
         <nav>
-            <ul>
+            <ul class="mainMenu">
                 <li><a href="#menupont-1">menupont 1</a></li>
                 <li><a href="#menupont-2">menupont 2</a></li>
                 <li><a href="#menupont-3">menupont 3</a></li>
@@ -21,8 +29,26 @@
             </ul>
         </nav>
     </header>
+    <section class="slider">képváltó fix 350px magas</section>
     <main>
-        Fő tartalom
+        <section class="box-2">
+            <h2>Két oszlopos</h2>
+            <div>oszlop 1</div>
+            <div>oszlop 2</div>
+        </section>
+        <section class="box-3">
+            <h2>Három oszlopos</h2>
+            <div>oszlop 1</div>
+            <div>oszlop 2</div>
+            <div>oszlop 3</div>
+        </section>
+        <section class="box-4">
+            <h2>Négy oszlopos</h2>
+            <div>oszlop 1</div>
+            <div>oszlop 2</div>
+            <div>oszlop 3</div>
+            <div>oszlop 4</div>
+        </section>
     </main>
     <footer>
         Gyakorló oldal | Flex elrendezés &copy; 2023 - <a href="https://github.com/KisNorbi1985" target="_blank">Kis Norbert GitHub</a>

@@ -41,9 +41,13 @@
             color: darkslateblue;
             padding: 5px 0 10px;
             border-bottom:1px solid transparent;
+            transition: border-bottom-color 1000ms ease-in-out;
         }
         .mainMenu a:hover {
             border-bottom-color: black;
+            transition: border-bottom-color 1000ms ease-in-out;/*1 másodperc(1000ms) alatt kerül rá a border és ha elvesszük az egeret eltűnik egyből*/
+            /*animáció
+            transition: stilusneve idő dinamika */
         }
         /*Képváltó terület*/
         section.slider {

@@ -69,7 +69,7 @@
                 width: 90%;
                 background: lime;
                 margin: 0 5%;
-
+                overflow: hidden;
             }
             /*main menu tablet*/
             header > .container {
@@ -86,7 +86,11 @@
                 justify-content: space-around;
             }
             .mainMenu > li {
-
+                margin-right:15px;
+            }
+            /*utolsó listaelemre nem kell*/
+            .mainMenu > li:last-child {
+                margin-right: 0;
             }
             /*2 és 4 oszlop elrendeződés*/
             .box-2, 
@@ -113,6 +117,20 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 
+            }
+            /*main menu és fejléc*/
+            header > .container {
+                flex-direction: row;
+            }
+            header nav {
+                align-self: center;
+                flex:1;
+            }
+            .logo{
+                width: 30%;
+            }
+            .mainMenu{
+                justify-content: flex-end;
             }
             /*4 oszlop*/
             .box-4 > div {
